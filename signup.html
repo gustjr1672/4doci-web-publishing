@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="/css/signup.css" type="text/css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="/js/signup.js" defer="defer"></script>
+    <script src="/js/header.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <button onclick="goBack()">
+        <img src="image/header/back.png" alt="뒤로가기" />
+      </button>
+    </header>
+    <div class="h1">
+      <h1>4℃ 이용을 위한<br />기본정보를 입력해주세요.</h1>
+    </div>
+
+    <form>
+      <div class="input">
+        <label for="email">이메일</label>
+        <div class="input-form">
+          <input type="email" id="email" name="email" />
+        </div>
+      </div>
+
+      <div class="input">
+        <label for="nickname">닉네임</label>
+        <div class="input-form">
+          <input type="text" id="nickname" name="nickname" required/>
+          <div class="error"></div>
+        </div>
+      </div>
+
+      <div class="input">
+        <label for="pwd">비밀번호</label>
+        <div class="input-form">
+          <input type="password" id="pwd" name="pwd" required onkeyup="checkPassword()" />
+          <div id="pwd-error" class="error"></div>
+        </div>
+      </div>
+
+      <div class="input">
+        <label for="pwdcheck">비밀번호 확인</label>
+        <div class="input-form">
+          <input
+            type="password"
+            id="pwd-check"
+            name="pwdcheck"
+            required
+            onkeyup="checkDuplicate()"
+          />
+          <div id="pwd-check-error" class="error"></div>
+        </div>
+      </div>
+    </form>
+
+    <div class="finish-btn">
+      <button type="submit" onclick="location.href='login.html'" disabled>완료</button>
+    </div>
+  </body>
+</html>

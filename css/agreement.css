@@ -1,0 +1,156 @@
+body {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    margin-left: 12px;
+    margin-top: 20px;
+}
+
+.header-wrap button {
+    background-color: white;
+    border: none;
+}
+
+.header-wrap {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.h1 {
+    display: flex;
+    justify-content: center;
+    margin: 20px 144px 48px 0px
+}
+
+.h1>h1 {
+    font-family: "Noto Sans KR", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+
+    color: #333333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    align-items: center;
+    width: 100%;
+}
+
+
+.checkbox-group {
+    width: 312px;
+    display: flex;
+    gap: 16px;
+}
+
+.checkbox-group:first-child {
+    padding: 30px 0px;
+    border-bottom: 1px solid #333333;
+}
+
+label {
+    font-size: 14px;
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 500;
+}
+
+.finish-btn {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    margin: 260px 14px 0px;
+    align-items: end;
+}
+
+.finish-btn button {
+    font-size: 16px;
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 600;
+    width: 300px;
+    height: 52px;
+
+    font-style: normal;
+    color: #FFFFFF;
+
+    background-color: #ccc;
+    border-radius: 8px;
+    border: none;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+input[type=checkbox]+label {
+    display: inline-block;
+    cursor: pointer;
+    line-height: 22px;
+    padding-left: 22px;
+    background: url('/image/agreement/unchecked.png') left/15px no-repeat;
+}
+
+input[type=checkbox]:checked+label {
+    background-image: url('/image/agreement/checked.png');
+}
+
+.checkbox-group button{
+    background-color: #FFFFFF;
+    border: none;
+    text-decoration: underline;
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    /* left: 30%;
+    top: 0; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 393px;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+  }
+  .modal-content {
+    
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    height: 80%;
+    position: relative;
+    font-family: "Noto Sans KR";
+  }
+
+  .show {
+    display: block; /* 모달창 보이도록 변경 */
+  }
+
+  /* 모달창 닫기 버튼 스타일 */
+  .close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  /* 모달창 닫기 버튼에 호버 효과 스타일 적용 */
+  /* .closeBtn:hover, .closeBtn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  } */
+

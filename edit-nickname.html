@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/css/eidt-nickname.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet" />
+    <script src="/js/header.js"></script>
+</head>
+
+<body>
+
+    <div class="header-wrap">
+        <header>
+            <div class="header-left">
+                <button><img src="/image/header/blackBack.png" alt="뒤로가기" onclick="goBack()" /></button>
+                <img src="/image/header/blackLogo.png" alt="4℃" width="60" height="40" />
+            </div>
+            <!-- <button class="bell"><img src="/image/bell.png" alt="알림" /></button> -->
+        </header>
+    </div>
+        <div class="input">
+            <label for="nickname">닉네임</label>
+            <!-- 데이터에 있는지 없는지 중복검사 필요 -->
+            <div class="input-form">
+                <input type="text" name="nickname">
+            </div>
+        </div>
+
+        <div class="finish-btn">
+            <button type="submit" onclick="location.href='email.html'">완료</button>
+        </div>
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+  }
+header{
+    display : flex;
+    margin-left: 12px;
+    margin-top: 20px;
+}
+header>button{
+    background-color: white;
+    border: none;
+}
+
+.h1 {
+display: flex;
+justify-content: center;
+margin: 20px 94px 48px 0px;
+}
+
+.h1>h1{
+font-family: "Noto Sans KR", sans-serif;
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 27px;
+
+color: #333333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  label{
+    font-family: "Noto Sans KR", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height:19px;
+    width: 300px;
+    }
+
+.input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.input-form{
+    text-align: center;
+}
+
+
+.input-form input{
+    width: 288px ;
+    height: 44px;
+    border-radius: 8px;
+    background: #FDFDFD;
+    border: 1px solid #949494;
+    /* box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25); */
+    /* padding-left: 10px; */
+    padding: 0;
+    padding-left: 10px;
+}
+
+.finish-btn{
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    margin: 140px 14px 0px;
+
+  }
+  .finish-btn button{
+    font-size: 16px;
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 500;
+    width: 300px;
+    height: 52px;
+
+    font-style: normal;
+    color: #FFFFFF;
+    
+    background-color: #ccc;
+    border-radius: 8px;
+    border: none;
+  }
+  
+  .error{
+    color : red;
+    font-size: 12px;
+    font-family: "Noto Sans KR", sans-serif;
+    display: flex;
+    text-align: left;
+    margin-top: 4px;
+  }

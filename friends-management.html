@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>친구관리페이지</title>
+    <link rel="stylesheet" href="/css/friends-management.css" type="text/css" />
+    <script src="/js/friends-management.js" defer="defer"></script>
+    <link
+      href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="header-wrap">
+      <header>
+        <div class="header-left">
+          <!-- <button><img src="/image/back.png" alt="뒤로가기" /></button> -->
+          <img src="/image/header/blackLogo.png" alt="4℃" width="60" height="40" />
+        </div>
+        <!-- <button class="bell"><img src="/image/header/blackBell.png" alt="알림" /></button> -->
+      </header>
+    </div>
+
+    <section id="btns" class="btns">
+      <button class="left-btn active" onclick="toggleContent('left')">친구목록</button>
+      <button class="right-btn" onclick="toggleContent('right')">친구추가</button>
+    </section>
+
+    <!--  친구 목록-->
+    <section id="left-content" class="contents">
+      <div class="search">
+        <input type="text" placeholder="닉네임으로 검색" />
+        <button>검색</button>
+      </div>
+      <div class="friend-list">
+        <span>친구 2명</span>
+
+        <div class="friend">
+          <button class="info">
+            <img src="/image/friends-management/profile.png" alt="프로필이미지" />
+            <div class="user-name">
+              <span>고민시</span>
+              <span>고민시작</span>
+            </div>
+          </button>
+
+          <button class="delete">삭제</button>
+        </div>
+
+        <div class="friend">
+          <button class="info">
+            <img src="/image/friends-management/progileImg2.png" alt="프로필이미지" />
+            <div class="user-name">
+              <span>최재혁</span>
+              <span>재혁짱</span>
+            </div>
+          </button>
+
+          <button class="delete">삭제</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="right-content" class="contents hidden">
+      <p>같이할 친구를 추가해 보세요</p>
+      <div class="add-friend">
+        <input type="text" placeholder="닉네임으로 검색" />
+        <button>검색</button>
+      </div>
+
+      <div class="content">
+        <div class="info">
+          <img src="image/friends-management/progileImg2.png" alt="프로필이미지" />
+          <div>
+            <span>최재혁</span>
+            <span>재혁짱</span>
+          </div>
+        </div>
+        <button>요청</button>
+      </div>
+    </section>
+
+    <div class="footer-wrap">
+      <footer>
+        <button>
+          <img src="/image/footer/home.png" onclick="location.href = 'main.html' " alt="홈" />
+        </button>
+        <button>
+          <img src="/image/footer/community.png" onclick="location.href = 'community.html' " alt="커뮤니티" />
+        </button>
+        <button>
+          <img src="/image/footer/clickFriendManagement.png" alt="친구관리" onclick="location.href = '/friends-management.html' "/>
+        </button>
+        <button>
+          <img src="/image/footer/myPage.png" alt="내정보" onclick="location.href = '/my-page.html' "/>
+        </button>
+      </footer>
+    </div>
+  </body>
+</html>

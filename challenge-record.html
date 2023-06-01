@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/challenge-record.css" />
+    <script src="/js/challenge-record.js" defer="defer"></script>
+    <script src="/js/header.js"></script>
+  </head>
+  <body>
+    <header>
+      <div>
+        <button onclick="goBack()"><img src="/image/header/whiteback.png" alt="" /></button>
+        <!-- <img src="/image/header/w.png" alt="" /> -->
+      </div>
+    </header>
+    <section class="goal">
+      <div>
+        <span>1회차</span>
+        <span>하루에 물 2000ml이상 마시기</span>
+      </div>
+      <div>
+        <span>목표량</span>
+        <span id="goal">2000ml</span>
+      </div>
+    </section>
+    <section class="form">
+      <span>도전사진</span>
+      <div id="image-box">
+        <label for="choose-file">
+          <img src="" id="input-image" alt="" />
+        </label>
+      </div>
+      <form class="image-form" id="image-form" method="post" enctype="multipart/form-data">
+        <div class="button">
+          <label for="choose-file"><img src="/image/challenge-record/addImage.png" alt="" /></label>
+        </div>
+        <input
+          type="file"
+          id="choose-file"
+          class="choose-file"
+          name="choose-file"
+          accept="image/*"
+          onchange="loadFile(this)"
+        />
+        <span>눌러서 사진추가</span>
+      </form>
+    </section>
+    <section class="form">
+      <span class="memo">메모</span>
+      <textarea
+        class="text-input"
+        id="text-input"
+        name="text-input"
+        placeholder="간단한 소감을 입력해주세요."
+        cols="30"
+        rows="10"
+      ></textarea>
+    </section>
+
+    <section class="achive">
+      <span class="text">달성량</span>
+      <div class="achive-control">
+        <button id="minus-btn">-</button>
+        <div class="achive-amount">
+          <input type="number" id="achive-amount" />
+          <span>ml</span>
+        </div>
+        <button id="plus-btn">+</button>
+      </div>
+    </section>
+    <footer>
+      <button>저장하기</button>
+    </footer>
+  </body>
+</html>

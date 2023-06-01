@@ -1,0 +1,132 @@
+* {
+  font-family: "SUIT", sans-serif !important;
+}
+body {
+    margin: 0; 
+  }
+  
+header {
+    display: flex;
+    align-items: center;
+    padding:16px 10px;
+    gap : 130px;
+    border-bottom: 1px solid #DBDBDB;
+ }
+
+header>button {
+    background-color: white;
+    border: none;
+    padding: 0;
+ }
+
+h1 {
+    font-family: "SUIT", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    /* line-height: 27px; */
+    position: fixed;
+    left : 46%;
+    top : 20px;
+    color: #333333;
+    margin: 0;
+} 
+
+section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 24px;
+}
+.comments-wrap img{
+  width: 30px;
+  height: 30px;
+}
+
+.comments-wrap{
+  display: flex;
+  flex-direction: column;
+  padding: 8px 0px;
+  gap : 4px;
+  border-bottom: 1px solid #F0F0F0;
+  width: 100%;
+  max-width: 450px;
+}
+
+.comments-wrap button{
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 8px;
+  margin: 4px 0px;
+  border : none;
+  background-color: #ffffff;
+  padding: 0 0;
+}
+
+button span{
+  font-size: 12px;
+  font-weight: 600;
+}
+.comment{
+  display: flex;
+  gap: 4px;
+  align-items: center;
+
+}
+.comment span:first-child{
+  font-size: 10px;
+  background-color: #C0ECEF;
+  padding: 4px 4px;
+  border-radius: 4px;
+}
+.comment span:nth-child(2){
+  font-size: 12px;
+  padding: 4px 4px;
+}
+.comments-wrap p{
+  font-size: 8px;
+}
+
+/* -------------댓글 입력창-----------  */
+
+.comment-input{
+  /* margin-top: 16vh; */
+  margin: 0px 0px 24px;
+  height: 32vh;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  gap: 36px;
+}
+
+.input {
+  width: 240px;
+  font-weight: 500;
+  font-size: 14px;
+  height: 44px;
+  border-radius: 10px;
+  padding-left: 10px;
+  border: none;
+  border-bottom: 1px solid #e5e5e5;
+  outline: none;
+}
+
+.input:focus {
+  border-bottom: 1px solid #333333;
+  -webkit-transition: 0.1s;
+  transition: 0.5s;
+}
+
+.comment-input button {
+
+  background-color: #333333;
+  border-radius: 8px;
+  border: none;
+  width: 56px;
+  height: 44px;
+  color: #ffffff;
+  font-size: 14px;
+}
+

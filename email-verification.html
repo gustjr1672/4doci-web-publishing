@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="css/email-verification.css" type="text/css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet" />
+  <script src="js/email-verification.js"></script>
+  <script src="js/header.js"></script>
+</head>
+
+<body>
+  <header>
+    <button onclick="goBack()">
+      <img src="image/header/back.png" alt="뒤로가기">
+    </button>
+  </header>
+
+  <div class="h1">
+    <h1>4℃ 이용을 위한<br>이메일 주소를 입력해주세요.</h1>
+  </div>
+
+  <form form action="signup.html" >
+    <div class="email-input">
+      <label for="email">이메일 주소</label>
+      <div class="email-input-form">
+        <input type="email" id="email" name="email" required>
+      </div>
+    </div>
+
+    <div class="finish-btn">
+      <button class="finish-btn" onclick="addcheck()" >인증번호 받기</button>
+    </div>
+    <div id="checkContainer"></div>
+  </form>
+
+  
+</body>
+
+</html>
