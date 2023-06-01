@@ -27,7 +27,6 @@ header button {
   border: none;
 }
 
-
 .profile {
   display: flex;
   flex-direction: column;
@@ -197,4 +196,7 @@ footer {
 footer button {
   background-color: white;
   border: none;
+}
+footer img {
+  width: 30px;
 }

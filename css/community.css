@@ -212,3 +212,6 @@ footer button {
   max-width: 450px;
   border: solid 1px #a7a7a7;
 }
+footer img {
+  width: 30px;
+}
