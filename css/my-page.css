@@ -35,6 +35,24 @@ header button {
   height: 310px;
   gap: 20px;
 }
+
+
+/* ==============프로필 사진=============== */
+.user-image{
+  position: relative;
+  background-image: url("/image/my-page/profile.png");
+  background-size: 125px 125px;
+  width: 125px;
+  height: 125px;
+  border-radius: 125px;
+
+}
+.profile .user-image label{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+}
 .profile .profile_edit {
   background-image: url("/image/my-page/profile.png");
   background-size: 125px 125px;
@@ -55,6 +73,12 @@ header button {
 .profile .profile_edit img {
   padding-right: 5px;
 }
+.choose-file{
+  display:none;
+}
+
+
+/* =================닉네임============= */
 
 .profile .info {
   display: flex;

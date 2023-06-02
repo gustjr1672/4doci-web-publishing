@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/my-page.css" type="text/css" />
+    <script src="/js/my-page.js"></script>
     <title>myPage</title>
     <link
     href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css"
@@ -24,10 +25,25 @@
 
     <section>
       <div class="profile">
-        <button class="profile_edit" onclick="location.href ='change-nickname.html' ">
-          <!-- <img class="progileImg" src="./image/tmp.jpg" alt="프로필이미지" /> -->
+        <form class="image-form" id="image-form" method="post" enctype="multipart/form-data">
+
+          <div class="user-image">
+            <label for="choose-file"><img src="/image/my-page/profileEdit.png" alt=""/></label>
+          </div>
+
+          <input
+            type="file"
+            id="choose-file"
+            class="choose-file"
+            name="choose-file"
+            accept="image/*"
+            onchange="loadFile(this)"
+          />
+        </form>
+        <!-- <button class="profile_edit" onclick="location.href ='change-nickname.html' ">
           <img src="/image/my-page/profileEdit.png" alt="프로필 수정" />
-        </button>
+          
+        </button> -->
 
         <div class="info">
           <p class="nickname">고민시</p>
