@@ -4,91 +4,83 @@
 
 body {
   margin: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 main {
   padding-bottom: 50px;
 }
 
 header {
+  width: 100%;
   display: flex;
-  justify-content: start;
   align-items: center;
-  margin: 20px 12px;
+  margin: 12px 40px 8px 40px;
   height: 40px;
+}
+header img {
+  margin-left: 12px;
 }
 
 .friends {
-  margin-top: 30px;
+  /* width: 90%; */
+  max-width: 450px;
+  margin: 12px;
+  padding-bottom: 16px;
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
-  gap: 12px;
+  gap: 4px;
+  border-bottom: 1px solid #dbdbdb;
 }
 .friends button {
   border: none;
   background-color: #fff;
-  font-size: 12px;
+  font-size: 8px;
   gap: 2px;
   font-weight: 600;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: black;
 }
 .friends button img {
-  width: 60px;
-  height: 60px;
+  width: 52px;
+  height: 52px;
   border-radius: 30px;
 }
-.filter {
-  font-size: 12px;
+.friends button span {
+  width: 60px;
+}
 
-  font-weight: 800;
-  margin-top: 36px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 48px;
-}
-.filter div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-}
-.filter div select {
-  background-color: #fff;
-  font-size: 12px;
-
-  font-weight: 800;
-  border-radius: 8px;
-  height: 28px;
-  width: 80px;
-  text-align: center;
-  line-height: 28px;
-}
 .feed {
-  margin: 40px 24px;
+  margin: 10px 0 10px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 24px;
+  gap: 12px;
   padding-bottom: 10px;
+  width: 100%;
+  border-bottom: 1px solid #e7e7e7;
 }
 .profile {
   display: flex;
   justify-content: start;
   align-items: center;
   width: 100%;
-  max-width: 345px;
-  gap: 12px;
+  max-width: 354px;
+  gap: 6px;
   font-size: 12px;
   font-weight: 800;
 }
 .profile img {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   border-radius: 30px;
 }
 .title {
@@ -96,16 +88,19 @@ header {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  max-width: 345px;
+  max-width: 354px;
+  margin-left: 6px;
+  height: 36px;
 }
 .challenge-title {
   font-size: 12px;
   font-weight: 700;
   width: 200px;
   text-align: start;
+  word-break: keep-all;
 }
 
-.title div {
+/* .title div {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -117,43 +112,43 @@ header {
   text-align: center;
   border-radius: 4px;
   color: #fff;
-  /* border: solid 1px #383d66; */
   background-color: #383d66;
-}
+} */
 .content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  gap: 36px;
+  gap: 12px;
 }
 .content img {
-  border-radius: 12px;
-  width: 345px;
+  width: 100%;
+  max-width: 450px;
 }
 .content span {
   font-size: 12px;
   font-weight: 700;
   width: 300px;
-  text-align: center;
+  text-align: start;
+  margin: 12px 48px 10px 0px;
 }
 .feed-footer {
   width: 100%;
-  max-width: 345px;
+  max-width: 354px;
   display: flex;
-  justify-content: space-between;
+  justify-content: end;
   align-items: center;
-  gap: 36px;
 }
-.feed-footer-btns {
+.title-btns {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 4px;
 }
-.feed-footer-btns button {
-  background-color: #fff;
+.title-btns button {
+  background-color: #ffffff;
+  color: #333333;
   border-radius: 4px;
   border: none;
   font-weight: 500;
@@ -163,6 +158,12 @@ header {
   justify-content: center;
   align-items: center;
   gap: 4px;
+  padding: 4px;
+  border: solid 1px #e6e6e6;
+  /* box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); */
+}
+.title-btns button :first-child {
+  width: 12px;
 }
 
 .comment {
@@ -178,10 +179,12 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 4px;
+  gap: 8px;
+  color: black;
 }
 .comment button img {
-  width: 24px;
+  width: 18px;
+  height: 20px;
 }
 .footer-wrap {
   position: fixed;
@@ -206,11 +209,6 @@ footer button {
 }
 .feed-footer-btns button img {
   width: 24px;
-}
-.border {
-  width: 390px;
-  max-width: 450px;
-  border: solid 1px #a7a7a7;
 }
 footer img {
   width: 30px;
