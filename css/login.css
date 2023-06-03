@@ -34,7 +34,7 @@ body {
   font-weight: bold;
   display: flex;
   justify-content: center;
-  margin: 24px 14px;
+  margin: 24px 0px;
 }
 /* 폼 전체 스타일 */
 .input-form {
@@ -46,21 +46,24 @@ body {
   margin: 10px 14px;
 }
 input[type="text"] {
-  padding-left: 60px;
+  /* width: 300px; */
+  padding-left: 80px;
   background-image: url("/image/login/user.png");
+  background-size: 36px;
   background-repeat: no-repeat;
-  background-position: 30px center;
+  background-position: 20px center;
 }
 input[type="password"] {
-  padding-left: 60px;
+  padding-left: 80px;
   background-image: url("/image/login/pwd.png");
+  background-size: 36px;
   background-repeat: no-repeat;
-  background-position: 30px center;
+  background-position: 20px center;
 }
 /* 입력란 스타일 */
 input[type="text"],
 input[type="password"] {
-  width: 258px;
+  width: 220px;
   height: 50px;
 
   margin: 10px 24px;
@@ -75,14 +78,20 @@ input[type="password"] {
 button[type="submit"] {
   background-color: #383d66;
   color: white;
-  width: 320px;
+  width: 304px;
   height: 52px;
   font-size: 16px;
-  font-weight: semi-bold;
+  font-weight: 600;
 
   border: none;
   border-radius: 12px;
   cursor: pointer;
+}
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .util {
   font-size: 14px;
@@ -90,18 +99,27 @@ button[type="submit"] {
   font-weight: bold;
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 50px;
-  padding: 0px 48px;
+  justify-content: space-between;
+  width: 304px;
+}
+.util label {
+  width: 90px;
 }
 .util .a {
   display: flex;
   flex-direction: row;
   gap: 20px;
 }
-a {
+
+.util .a :first-child {
   color: inherit;
   text-decoration: none;
+  width: 50px;
+}
+.util .a :nth-child(2) {
+  color: inherit;
+  text-decoration: none;
+  width: 80px;
 }
 .save {
   gap: 8px;

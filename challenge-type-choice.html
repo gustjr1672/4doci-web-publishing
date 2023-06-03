@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="/css/challenge-type-choice.css" />
     <link
@@ -12,50 +11,55 @@
       rel="stylesheet"
     />
     <script src="/js/header.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="header-left">
-          <button><img src="/image/header/blackBack.png" alt="뒤로가기" onclick="goBack()"/></button>
-          <!-- <img src="/image/title.png" alt="4℃" width="60" height="40" /> -->
-        </div>
-        <!-- <button><img src="/image/bell.png" alt="알림" /></button> -->
-      </header>
+      <div class="header-left">
+        <button><img src="/image/header/blackBack.png" alt="뒤로가기" onclick="goBack()" /></button>
+        <!-- <img src="/image/title.png" alt="4℃" width="60" height="40" /> -->
+      </div>
+      <!-- <button><img src="/image/bell.png" alt="알림" /></button> -->
+    </header>
     <div class="title">
-        <h1>
+      <h1>
         <p class="h1">어떤 도전을 해볼까요?</p>
         <p class="h2">도전 종류를 선택해주세요</p>
-        </h1>
+      </h1>
     </div>
     <div>
-        <form class="challenge-list">
-            <div class="challenge-option">
-              <input value="personal" id="personal" name="challenge" type="radio" />
-              <label for="personal">
-                <img src="/image/challenge-type-choice/personal.png" alt="" />
-                <p class="frequency">개인도전</p>
-              </label>
-            </div>
-            <div class="challenge-option">
-              <input value="random" id="random" name="challenge" type="radio" />
-              <label for="random">
-                <img src="/image/challenge-type-choice/random.png" alt="" />
-                <p class="frequency">랜덤도전</p>
-              </label>
-            </div>
-            <div class="challenge-option">
-              <input value="group" id="group" name="challenge" type="radio" />
-              <label for="group">
-                <img src="/image/challenge-type-choice/group.png" alt="" />
-                <p class="frequency">그룹도전</p>
-              </label>
-            </div>
-            <div class="create-btn">
-              <button type="submit" id="submit-button">도전생성</button>
-            </div>
-          </form>
+      <form class="challenge-list">
+        <div class="challenge-option">
+          <input value="personal" id="personal" name="challenge" type="radio" />
+          <label for="personal">
+            <img src="/image/challenge-type-choice/personal.png" alt="" />
+            <p class="frequency">개인도전</p>
+          </label>
+        </div>
+        <div class="challenge-option">
+          <input value="random" id="random" name="challenge" type="radio" />
+          <label for="random">
+            <img src="/image/challenge-type-choice/random.png" alt="" />
+            <p class="frequency">랜덤도전</p>
+          </label>
+        </div>
+        <div class="challenge-option">
+          <input value="group" id="group" name="challenge" type="radio" />
+          <label for="group">
+            <img src="/image/challenge-type-choice/group.png" alt="" />
+            <p class="frequency">그룹도전</p>
+          </label>
+        </div>
+        <div class="create-btn">
+          <button
+            oonclick="location.href='group_free_challenge_form.html'"
+            type="submit"
+            id="submit-button"
+          >
+            도전생성
+          </button>
+        </div>
+      </form>
     </div>
-</body>
-
+  </body>
 </html>

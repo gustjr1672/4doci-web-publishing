@@ -23,30 +23,37 @@
 
     <form>
       <div class="input-form">
-        <input type="text" required id="email" name="email" placeholder="이메일" autocomplete="off"/>
+        <input
+          type="text"
+          required
+          id="email"
+          name="email"
+          placeholder="이메일"
+          autocomplete="off"
+        />
         <input type="password" required id="password" name="password" placeholder="비밀번호" />
       </div>
       <div class="login-btn">
         <button type="submit">로그인</button>
       </div>
     </form>
+    <section class="footer">
+      <div class="util">
+        <label for="save-id" class="checkbox-label">
+          <input type="checkbox" id="save-id" class="checkbox-input" />
+          아이디 저장
+        </label>
 
-    <div class="util">
-      <label for="save-id" class="checkbox-label">
-        <input type="checkbox" id="save-id" class="checkbox-input" />
-        아이디 저장
-      </label>
-
-      <div class="a">
-        <a href="agreement.html">회원가입</a>
-        <a href="">회원정보 찾기</a>
+        <div class="a">
+          <a href="agreement.html">회원가입</a>
+          <a href="">회원정보 찾기</a>
+        </div>
       </div>
-    </div>
-
+    </section>
     <p class="sns-text">SNS로그인</p>
     <div class="sns-img">
       <img src="/image/login/googleLogo.png" alt="googleLogo" />
-      <img src="/image/login/kakaoLogo.png"alt="kakaoLogo"/>
+      <img src="/image/login/kakaoLogo.png" alt="kakaoLogo" />
     </div>
   </body>
 </html>
