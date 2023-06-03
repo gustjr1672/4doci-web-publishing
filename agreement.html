@@ -1,71 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="/css/agreement.css" type="text/css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
-        rel="stylesheet" />
+    <link href="/css/agreement.css" type="text/css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <script src="/js/agreement.js" defer="defer"></script>
     <script src="js/header.js"></script>
-</head>
+  </head>
 
-<body id="body">
+  <body id="body">
     <header>
-        <div class="header-wrap">
-            <button onclick="goBack()"><img src="/image/header/back.png" alt="뒤로가기"></button>
-        </div>
+      <div class="header-wrap">
+        <button onclick="goBack()"><img src="/image/header/blackBack.png" alt="뒤로가기" /></button>
+      </div>
     </header>
     <div class="h1">
-        <h1>4℃ 이용을 위한<br>약관을 동의해주세요.</h1>
+      <h1>4℃ 이용을 위한<br />약관을 동의해주세요.</h1>
     </div>
 
     <form>
-        <div class="checkbox-group">
-            <input type="checkbox" id="check-all" onclick="checkAll(this)">
-            <label for="check-all">[필수] 약관 전체 동의</label>
-
-        </div>
-        <div class="checkbox-group">
-            <input type="checkbox" id="check1" name="check1" value="1" onclick="checkEach()">
-            <label for="check1">[필수] 서비스 이용약관 동의</label>
-            <button type="button" class="popup-btn">보기</button>
-        </div>
-        <div class="checkbox-group">
-            <input type="checkbox" id="check2" name="check2" value="2" onclick="checkEach()">
-            <label for="check2">[필수] 개인정보 수집 이용 동의</label>
-            <button type="button" class="popup-btn">보기</button>
-        </div>
-        <div class="checkbox-group">
-            <input type="checkbox" id="check3" name="check3" value="3" onclick="checkEach()">
-            <label for="check3">[필수] 개인정보 제3자 제공 동의</label>
-            <button type="button" class="popup-btn">보기</button>
-        </div>
+      <div class="checkbox-group">
+        <input type="checkbox" id="check-all" onclick="checkAll(this)" />
+        <label for="check-all">[필수] 약관 전체 동의</label>
+      </div>
+      <div class="checkbox-group">
+        <input type="checkbox" id="check1" name="check1" value="1" onclick="checkEach()" />
+        <label for="check1">[필수] 서비스 이용약관 동의</label>
+        <button type="button" class="popup-btn">보기</button>
+      </div>
+      <div class="checkbox-group">
+        <input type="checkbox" id="check2" name="check2" value="2" onclick="checkEach()" />
+        <label for="check2">[필수] 개인정보 수집 이용 동의</label>
+        <button type="button" class="popup-btn">보기</button>
+      </div>
+      <div class="checkbox-group">
+        <input type="checkbox" id="check3" name="check3" value="3" onclick="checkEach()" />
+        <label for="check3">[필수] 개인정보 제3자 제공 동의</label>
+        <button type="button" class="popup-btn">보기</button>
+      </div>
     </form>
 
     <div class="finish-btn">
-        <button type="submit" onclick="location.href='email-verification.html'" disabled>완료</button>
+      <button type="submit" onclick="location.href='email-verification.html'" disabled>완료</button>
     </div>
 
+    <div id="modal-wrap" class="modal">
+      <div class="modal-content">
+        <!-- 모달창 내용 -->
+        <span class="close-btn">&times;</span>
+        <h2>이용약관</h2>
+        <p>약관내용 채워야함ㅎ</p>
+      </div>
+    </div>
 
-        <div id="modal-wrap" class="modal">
-            <div class="modal-content">
-                <!-- 모달창 내용 -->
-                <span class="close-btn">&times;</span>
-                <h2>이용약관</h2>
-                <p>약관내용 채워야함ㅎ</p>
-
-            </div>
-        </div>
-
-
-    <script>
-      
-    </script>
-
-</body>
-
+    <script></script>
+  </body>
 </html>

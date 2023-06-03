@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>free_challenge_form</title>
+    <link rel="stylesheet" href="/css/group_free_challenge_form.css" type="text/css" />
+    <script src="/js/group_free_challenge_form.js" defer="defer"></script>
+    <link
+      href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header-wrap">
+        <header>
+          <div class="header_left">
+            <button onclick="location.href='challenge-type-choice.html'">
+              <img src="/image/header/blackBack.png" alt="뒤로가기" />
+            </button>
+          </div>
+        </header>
+      </div>
+    </header>
+
+    <div class="massage">
+      <p>도전에 대해 입력해 주세요</p>
+    </div>
+
+    <form>
+      <div class="list">
+        <div class="category_title">
+          <label for="category">카테고리</label>
+          <!--label: 입력 폼 요소와 레이블을 연결할때 사용. div보다 의미론적으로 명확-->
+          <div>
+            <select id="category" name="category">
+              <option value="" selected>선택</option>
+              <option value="운동">운동</option>
+              <option value="식습관">식습관</option>
+              <option value="학습">학습</option>
+              <option value="생활">생활</option>
+              <option value="가족">가족</option>
+              <option value="취미">취미</option>
+              <option value="기타">기타</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="name_set">
+          <div class="group_title">
+            <label for="group_name">그룹명</label>
+            <div>
+              <input
+                type="text"
+                placeholder="3자 이상 20자 이하"
+                id="group_name"
+                class="group_name"
+                name="group_name"
+                oninput="groupAlert()"
+              />
+              <p id="check_group_length"></p>
+            </div>
+          </div>
+
+          <div class="group_title">
+            <label for="challenge_name">도전명</label>
+            <div>
+              <textarea
+                placeholder="3자 이상 30자 이하"
+                id="challenge_name"
+                class="challenge_name"
+                name="challenge_name"
+                oninput="challengeAlert()"
+              ></textarea>
+              <p id="check_challenge_length"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="quantity_title">
+          <label for="quantity_inside">목표량</label>
+          <div class="quantity_set">
+            <input type="text" placeholder="수치 입력" id="quantity_inside" name="goal_quantity" />
+            <div>
+              <select id="quantity_inside" name="unit">
+                <option value="" selected>단위 선택</option>
+                <option value="회">회</option>
+                <option value="분">분</option>
+                <option value="시간">시간</option>
+                <option value="kg">kg</option>
+                <option value="km">km</option>
+                <option value="ml">ml</option>
+                <option value="L">L</option>
+                <option value="없음">없음</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="frequency_title">
+          <label for="auth_frequency">인증 빈도</label>
+          <div class="frequency_set">
+            <div>
+              <select id="auth_frequency" name="auth_frequency">
+                <option value="" selected>선택</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+              </select>
+            </div>
+            <p>일에 한 번</p>
+          </div>
+        </div>
+
+        <div class="period_title">
+          <div class="period_set">
+            <div class="start_set">
+              <label for="start_inside">시작일</label>
+              <div>
+                <input type="date" id="start_inside" class="inside" name="start_date" />
+              </div>
+            </div>
+            <div class="end_set">
+              <label for="end_inside">종료일</label>
+              <div>
+                <input type="date" id="end_inside" class="inside" name="end_date" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="next_btn">
+        <button type="submit">다음</button>
+      </div>
+    </form>
+  </body>
+</html>
