@@ -1,0 +1,150 @@
+* {
+  font-family: "SUIT", sans-serif !important;
+}
+
+body {
+  margin: 0;
+  background-image: linear-gradient(to bottom, #383d66 240px, #ffffff 240px);
+  background-repeat: no-repeat;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 12px;
+}
+header img {
+  width: 22px;
+}
+header button {
+  background-color: #ffffff00;
+  border: none;
+}
+.title {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  margin-right: 108px;
+  margin-top: 40px;
+}
+
+.package-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+}
+.package-title img {
+  width: 30px;
+}
+.package-title button {
+  background-color: #fff;
+  border: none;
+}
+h1 {
+  /* margin: 6px 0 12px 24px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 8px;
+}
+
+.h1 {
+  font-weight: 700;
+  font-size: 20px;
+  margin: 0;
+}
+
+.h2 {
+  font-size: 12px;
+  line-height: 16px;
+  margin: 0;
+  font-weight: 400;
+}
+.package-list {
+  margin-top: 36px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.package-option label {
+  background-color: #fff;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  /* margin: 16px 0; */
+  width: 280px;
+  height: 40px;
+  border: 2px solid #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  transform: all 0.15s ease;
+}
+label span:first-child {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.package-option input {
+  display: none;
+}
+
+.package-option input:checked + label {
+  border: solid 2px #383d66;
+}
+
+.create-btn {
+  display: flex;
+  justify-content: center;
+  margin: 24px 14px;
+}
+button[type="submit"] {
+  background-color: #71b5cb;
+  color: white;
+  width: 280px;
+  height: 52px;
+  font-size: 14px;
+  font-weight: 600;
+
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+ul {
+  font-weight: 600;
+  font-size: 12px;
+  width: 90%;
+  height: 0;
+  gap: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+  margin-top: 0;
+}
+.show {
+  padding-top: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  visibility: visible;
+  height: 60px;
+  width: 90%;
+}
+.up-arrow {
+  content: url(/image/challenge-package-choice/uparrow.png);
+  transition: 2s;
+}
+.hidden {
+  visibility: hidden;
+}
+.visible {
+  visibility: visible;
+}
