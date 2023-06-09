@@ -18,11 +18,12 @@
       <div>
         <button onclick="goBack()"><img src="/image/header/whiteback.png" alt="" /></button>
         <!-- <img src="/image/header/w.png" alt="" /> -->
+        <button onclick="openModal('delete-modal-wrap','delete-modal-content')"><img src="/image/header/more.png" alt="" /></button>
       </div>
     </header>
     <section class="goal">
       <div>
-        <span>1회차</span>
+        <button onclick="openModal('turn-modal-wrap','turn-modal-content')">1회차</button>
         <span>하루에 물 2000ml이상 마시기</span>
       </div>
       <div>
@@ -69,7 +70,7 @@
       <div class="achive-control">
         <button id="minus-btn">-</button>
         <div class="achive-amount">
-          <input type="number" id="achive-amount" />
+          <input type="number" id="achive-amount" value="0"/>
           <span>ml</span>
         </div>
         <button id="plus-btn">+</button>
@@ -78,5 +79,87 @@
     <footer>
       <button>저장하기</button>
     </footer>
+
+   <!-- 삭제모달 -->
+    <div id="delete-modal-wrap" class="delete-modal">
+      <div id="delete-modal-content"class="delete-modal-content">
+        <button>삭제</button>
+        <button class="close-btn" onclick="closeModal('delete-modal-wrap','delete-modal-content')">취소</button>
+      </div>
+    </div>
+
+    <!-- 회차모달 -->
+    <div id="turn-modal-wrap" class="turn-modal">
+      <div id="turn-modal-content" class="turn-modal-content">
+        <section class="challeng-name-wrap">
+          <div>
+              <div class="turn">
+              <span>1회차</span>
+              </div>
+              <p class="info">하루에 물 2000ml이상 마시기</p>
+          </div>
+          <div>
+              <p class="period">도전기간</p>
+              <p class="info">2023.05.07 ~ 2023.06.08</p>
+          </div>
+      </section>
+  
+      <section class="title">
+      <div>
+          <p>회차</p>
+          <p>달성량</p>
+          <p>성공여부</p>
+      </div>
+      </section>
+      <section class="turn-wrap">
+          
+          <div>
+              <div class="turn">
+                  <span>1회차</span>
+              </div>
+              <p>200ml</p>
+              <p>실패</p>
+          </div>
+          <div>
+              <div class="turn">
+                  <span>2회차</span>
+              </div>
+              <p>0ml</p>
+              <p>실패</p>
+          </div>
+          <div>
+              <div class="turn">
+                  <span>3회차</span>
+              </div>
+              <p>2100ml</p>
+              <p>성공</p>
+          </div>
+          <div>
+              <div class="turn">
+                  <p>4회차</p>
+              </div>
+              <p>500ml</p>
+              <p>실패</p>
+          </div>
+          <div>
+              <div class="turn">
+                  <span>5회차</span>
+              </div>
+              <p>500ml</p>
+              <p>진행중</p>
+          </div>
+          <div>
+              <div class="turn">
+                  <span>5회차</span>
+              </div>
+              <p>500ml</p>
+              <p>진행중</p>
+          </div>
+      </section>
+      <footer>
+          <button onclick="closeModal('turn-modal-wrap','turn-modal-content')">닫기</button>
+        </footer>
+      </div>
+    </div>
   </body>
 </html>
