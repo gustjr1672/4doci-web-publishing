@@ -19,3 +19,23 @@ document.getElementById("minus-btn").addEventListener("click", function () {
   if (document.getElementById("achive-amount").value > 0)
     document.getElementById("achive-amount").value--;
 });
+
+function openModal(id,contentId) {
+  const modal = document.getElementById(id);
+  var modalContent = document.getElementById(contentId);
+  modal.style.display = "block";
+  setTimeout(function () {
+    modalContent.classList.add('active');
+  }, 20);
+   
+ 
+}
+
+function closeModal(id,contentId) {
+  const modal = document.getElementById(id);
+  var modalContent = document.getElementById(contentId);
+  modalContent.classList.remove("active");
+  setTimeout(function () {
+    modal.style.display = "none";
+  }, 300);
+}
