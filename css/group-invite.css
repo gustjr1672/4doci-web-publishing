@@ -7,7 +7,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center; */
-  background-image: linear-gradient(to bottom, #383d66 320px, #fff 320px);
+  background-image: linear-gradient(to bottom, #383d66 372px, #fff 372px);
   background-repeat: no-repeat;
 }
 header {

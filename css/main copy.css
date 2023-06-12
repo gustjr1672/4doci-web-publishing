@@ -6,19 +6,15 @@ body {
   margin: 0;
   background-image: linear-gradient(to bottom, #383d66 372px, #ffffff 372px);
   background-repeat: no-repeat;
-  
 }
-.header-wrap{
-  width: 100%;
-  max-width: 700px;
-  margin: 0 auto;
-}
+
 header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 18px 20px;
-  height: 40px;
+  /* gap : 270px; */
+  /* border-bottom: 1px solid #DBDBDB; */
 }
 
 header > button {
@@ -40,8 +36,8 @@ header > button {
 }
 
 .profile-title {
-  width: 80%;
-  max-width: 500px;
+  width: 84%;
+  max-width: 450px;
   display: flex;
   align-items: center;
   justify-content: baseline;
@@ -58,17 +54,17 @@ header > button {
 .start-btn {
   height: 110px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  margin: 16px 0;
+  margin: 16px;
+  margin-bottom: 12px;
   background-color: #5192f3;
   color: #ffffff;
-  /* gap: 10%; */
+  gap: 24px;
   border-radius: 12px;
-  width: 76%;
-  height: 70px;
-  max-width: 500px;
-  padding:24px;
+  width: 100%;
+  max-width: 700px;
+  padding-top: 10px;
 }
 .start-btn > div {
   display: flex;
@@ -117,7 +113,7 @@ header > button {
 /* ==================도전 리스트==================== */
 .chal-header {
   width: 80%;
-  max-width: 500px;
+  max-width: 450px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -163,15 +159,13 @@ option {
   /* padding: 0 20px; */
   display: flex;
   justify-content: center;
-  margin: 12px 0px;
-  width: 100%;
+  margin: 12px 30px;
 }
 
 .chal-btn {
   color: #333333;
   display: flex;
-  width: 76%;
-  max-width: 500px;
+  width: 270px;
   height: 100px;
   border-radius: 12px 0px 0px 12px;
   border: none;
@@ -270,11 +264,12 @@ option {
   bottom: 0%;
   left: 50%;
   transform: translateX(-50%);
-  max-width: 700px;
+  max-width: 450px;
   width: 100%;
   margin: 0 auto;
   background-color: white;
 }
+
 footer {
   display: flex;
   justify-content: space-between;
@@ -282,12 +277,10 @@ footer {
   margin: 0 20px;
   height: 50px;
 }
+
 footer button {
   background-color: white;
   border: none;
-}
-footer img {
-  width: 30px;
 }
 
 /* ==========================알림 modal====================== */
