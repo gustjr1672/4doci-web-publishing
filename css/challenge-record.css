@@ -6,7 +6,7 @@ body {
   /* height: 100vh; */
   margin: 0;
   /* background-color: #383d66; */
-  background-image: linear-gradient(to bottom, #383d66 320px, #fff 320px);
+  background-image: linear-gradient(to bottom, #383d66 372px, #fff 372px);
   background-repeat: no-repeat;
 }
 header {
@@ -235,7 +235,6 @@ footer button {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
-  max-width: 450px;
   height: 100%;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.5);
@@ -250,10 +249,12 @@ footer button {
 }
 .delete-modal-content.active button {
   transform: translateY(10%);
+
 }
 .delete-modal-content button{
   border-radius: 12px;
   width: 88%;
+  max-width: 500px;
   height: 56px;
   border: none;
   background-color: #fafafa;

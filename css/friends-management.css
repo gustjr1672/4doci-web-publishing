@@ -4,24 +4,19 @@ body {
 button {
   border: none;
 }
-.header-wrap {
-  max-width: 700px;
+.header-wrap{
   width: 100%;
+  max-width: 700px;
   margin: 0 auto;
 }
-
 header {
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  margin: 20px 12px;
-}
-
-.header-left {
-  display: flex;
-  gap: 12px;
-  width: 90px;
+  padding: 18px 20px;
   height: 40px;
 }
+
 
 header button {
   background-color: white;
